@@ -6,7 +6,7 @@ define(function (require) {
     let CountryTagProvider = function (Private) {
 
         const _ = require('lodash');
-        require('./lodash-oo-mixin');
+        require ('kibana-plugin-lodash-oo-mixin')(_);
 
         const TemplateVisType = Private(require('ui/template_vis_type/TemplateVisType'));
         const Schemas = Private(require('ui/Vis/Schemas'));
