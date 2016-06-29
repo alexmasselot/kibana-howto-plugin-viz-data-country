@@ -16,7 +16,7 @@
     "babel-eslint": "4.1.8",
     "eslint": "1.10.3",
     "eslint-plugin-mocha": "1.1.0",
-    "@elastic/plugin-helpers": "5.0.0-beta1"
+    "@elastic/plugin-helpers": "5.0.0-beta2"
   },
   "dependencies": {
     "lodash": "^3.10.1",
