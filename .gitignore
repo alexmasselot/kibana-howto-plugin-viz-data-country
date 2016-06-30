@@ -1,3 +1,4 @@
 node_modules/
 .idea
 /kibana-howto-plugin-viz-data-country.iml
+build/*
