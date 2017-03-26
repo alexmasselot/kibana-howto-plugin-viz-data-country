@@ -8,8 +8,8 @@ define(function (require) {
         const _ = require('lodash');
         require ('kibana-plugin-lodash-oo-mixin')(_);
 
-        const TemplateVisType = Private(require('ui/template_vis_type/TemplateVisType'));
-        const Schemas = Private(require('ui/Vis/Schemas'));
+        const TemplateVisType = Private(require('ui/template_vis_type/template_vis_type'));
+        const Schemas = Private(require('ui/Vis/schemas'));
 
 
         return new TemplateVisType({
