@@ -1,5 +1,5 @@
-require('plugins/simple_data_viz/countryTagController');
-require('plugins/simple_data_viz/country_tag.css');
+require('plugins/viz_data_country/countryTagController');
+require('plugins/viz_data_country/country_tag.css');
 
 define(function (require) {
 
@@ -17,7 +17,7 @@ define(function (require) {
             title: 'Country tag',
             description: 'cuontry importance in the search',
             icon: 'fa-cloud',
-            template: require('plugins/simple_data_viz/country-tag.html'),
+            template: require('plugins/viz_data_country/country-tag.html'),
             schemas: new Schemas([
                 {
                     group: 'metrics',

@@ -5,7 +5,7 @@ var _ = require('lodash');
 var gridster = require('gridster');
 var ShelfPack = require('shelf-pack');
 
-var flagDefs = require('plugins/simple_data_viz/images/flags-normal/flag-def.json');
+var flagDefs = require('plugins/viz_data_country/images/flags-normal/flag-def.json');
 
 module.controller('CountryTagController', function ($scope, $rootScope, $element, Private) {
 
@@ -70,7 +70,7 @@ module.controller('CountryTagController', function ($scope, $rootScope, $element
             gSel.append('image')
                 .attr({
                     'xlink:href': function (c) {
-                        return '/plugins/simple_data_viz/images/flags-normal/' + c.id.toLowerCase() + '.png'
+                        return '/plugins/viz_data_country/images/flags-normal/' + c.id.toLowerCase() + '.png'
                     }
                 });
             gSel.append('text')
