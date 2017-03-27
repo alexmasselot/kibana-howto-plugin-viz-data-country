@@ -9,13 +9,13 @@ define(function (require) {
         require ('kibana-plugin-lodash-oo-mixin')(_);
 
         const TemplateVisType = Private(require('ui/template_vis_type/template_vis_type'));
-        const Schemas = Private(require('ui/Vis/schemas'));
+        const Schemas = Private(require('ui/vis/schemas'));
 
 
         return new TemplateVisType({
             name: 'svd-country-tag',
             title: 'Country tag',
-            description: 'cuontry importance in the search',
+            description: 'country importance in the search',
             icon: 'fa-cloud',
             template: require('plugins/viz_data_country/country-tag.html'),
             schemas: new Schemas([
