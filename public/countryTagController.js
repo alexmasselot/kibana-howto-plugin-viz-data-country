@@ -40,8 +40,8 @@ module.controller('CountryTagController', function ($scope, $rootScope, $element
 
             var lFlags = _.map($scope.tags, function (t) {
                 var relArea = t.value / tot * areaTot;
-                var flag = flagDefs[t.label];
-                var alpha = relArea / (flag.width * flag.height) * 2; //don't ask me why I put *2...
+                var flag = flagDefs[t.label.toLowerCase()];
+                var alpha = relArea / (flag.width * flag.height); //don't ask me why I put *2...
                 return {
                     value: t.value,
                     id: t.label,
@@ -70,7 +70,7 @@ module.controller('CountryTagController', function ($scope, $rootScope, $element
             gSel.append('image')
                 .attr({
                     'xlink:href': function (c) {
-                        return '/plugins/viz_data_country/images/flags-normal/' + c.id.toLowerCase() + '.png'
+                        return '/nxd/plugins/viz_data_country/images/flags-normal/' + c.id.toLowerCase() + '.png'
                     }
                 });
             gSel.append('text')
