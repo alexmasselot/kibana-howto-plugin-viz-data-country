@@ -70,7 +70,7 @@ module.controller('CountryTagController', function ($scope, $rootScope, $element
             gSel.append('image')
                 .attr({
                     'xlink:href': function (c) {
-                        return 'plugins/viz_data_country/images/flags-normal/' + c.id.toLowerCase() + '.png'
+                        return '../plugins/viz_data_country/images/flags-normal/' + c.id.toLowerCase() + '.png'
                     }
                 });
             gSel.append('text')
